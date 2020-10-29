@@ -73,6 +73,7 @@ button {
     text-align: center;
 }
 
+
 #title__container {
     display: flex;
     margin: 24.5px 0;
@@ -80,7 +81,7 @@ button {
 
 #title__container p {
     width: 559px;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 100%;
     text-align: center;
     margin: 0;
@@ -370,3 +371,84 @@ button {
 /* .sp_only {
     display: none;
 } */
+
+
+/*ここから追加*/
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.main, .side {
+    padding: 1%;
+}
+
+.main {
+    width: 100%;
+}
+
+
+/* 2カラムコンテンツにする */
+
+.archive {
+ /*   display: flex;*/
+    flex-wrap: wrap;
+}
+
+.archive div {
+    margin-bottom: 3rem;
+    padding: 3rem;
+    width: 90%;
+    background-color: #f0f0f0;
+    
+}
+
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+    .main, .side {
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0;
+    }
+    .archive div {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+
+.descrip_title {
+    display: block;
+    font-size: 40px;
+    line-height: 100%;
+
+    text-align: center;
+    margin: 10 auto;
+}
+
+#title_main p{
+     width: 100%;
+    font-size: 50px;
+    line-height: 100%;
+    text-align: center;
+    margin: 0;
+    margin-left: 96px;
+}
+#title_main hr{
+   margin: 20px 3%;
+}
+
+
+#table{
+    display: table-cell;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
