@@ -455,10 +455,15 @@ button {
 
 
 #table{
-    display: table-cell;
+    display: block;
     font-size: 20px;
     width: 100%;
     text-align: center;
+    margin: 10px auto;
+}
+.table_show{
+    text-align: center;
+    margin: 10px auto;
 }
 
 #list{
@@ -472,4 +477,15 @@ button {
     font-size: 40px;
     line-height: 100%;
     text-align: center;
+}
+#buttons_guest
+{
+    margin: 0 0;
+}
+#buttons_guest .suiteki{
+position: relative;
+    display: inline-block;
+    padding: 10px 50px;
+    border-radius: 25px;
+margin: 10px 20px;
 }
