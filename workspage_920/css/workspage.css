@@ -479,8 +479,8 @@ button {
 }
 #buttons_guest
 {
-    display: inline;
-    margin: 0 0;
+    display: flex;
+    margin: 10px 0px;
 }
 #buttons_guest .suiteki{
 text-align: center;
@@ -492,7 +492,7 @@ margin: 10px 0px;
 
   form{
     
-    width:460px;
+    width:400px;
     margin:0 auto;
   }
   .item{
@@ -534,6 +534,7 @@ margin: 10px 0px;
     font-weight:bold;
     padding: 10px 20px;
     margin: 0 5px;
+    margin-left: 200px;
   }
  
   
