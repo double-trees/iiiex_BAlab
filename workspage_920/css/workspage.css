@@ -477,23 +477,25 @@ button {
     line-height: 100%;
     text-align: center;
 }
+
 #buttons_guest
 {
     display: flex;
-    margin: 10px 0px;
+    margin: 10px auto;
+    vertical-align: middle;
 }
 #buttons_guest .suiteki{
 text-align: center;
 position: relative;
     display: inline-block;
-    padding: 10px 10%;
+    padding: 10px 1%;
 margin: 10px 0px;
 }
 
   form{
     
     width:400px;
-    margin:0 auto;
+    margin:0 0;
   }
   .item{
     overflow: hidden;
@@ -508,7 +510,7 @@ margin: 10px 0px;
   }
   .inputs{
     float: left;
-    width:300px;
+    width:360px;
   }
   input[type="text"],input[type="email"]{
     border: solid 1px #aaa;
@@ -534,7 +536,7 @@ margin: 10px 0px;
     font-weight:bold;
     padding: 10px 20px;
     margin: 0 5px;
-    margin-left: 200px;
+    margin-left: 250px;
   }
  
   
