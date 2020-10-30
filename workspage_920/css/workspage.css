@@ -478,24 +478,37 @@ button {
     text-align: center;
 }
 
+#button_s{
+    display: flex;
+    margin: 10px auto;
+}
+
 #buttons_guest
 {
     display: flex;
     margin: 10px auto;
-    vertical-align: middle;
+    
 }
 #buttons_guest .suiteki{
 text-align: center;
 position: relative;
     display: inline-block;
-    padding: 10px 1%;
+    padding: 10px 10%;
 margin: 10px 0px;
 }
+
+@media screen and (max-width: 850px) {
+    #button_s{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
 
   form{
     
     width:400px;
-    margin:0 0;
+    margin:0 auto;
   }
   .item{
     overflow: hidden;
