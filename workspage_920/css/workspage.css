@@ -558,13 +558,13 @@ margin: 10px 0px;
 .live_streaming{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;}
 
 .live_chat{
     position: relative;
-    width: 100%;
-    height: 100%;
+    width:  100%;
+    height: auto;
     display: flex;
 }
 
