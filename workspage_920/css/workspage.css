@@ -37,9 +37,9 @@ button {
 }
 #works__container {
     position: relative;
-   /* width: 100vw;
+    width: 100vw;
     height: calc(100vw * 9/16);
-    */max-height: calc(100vh - 99px);
+    max-height: calc(100vh - 99px);
     max-width: calc((100vh - 99px) * 16/9);
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -47,15 +47,15 @@ button {
 
     display: flex;
 }
-
+/*
 #works__container iframe {
     position: relative;
     width: 100%;
     height: 100%;
     border: none;
-   /* display: block;*/
+    display: block;
 }
-
+*/
 .square {
     display: none;
     width: 960px;
@@ -553,14 +553,21 @@ margin: 10px 0px;
     margin: 0 5px;
     margin-left: 250px;
   }
-/* 
+ 
 
 .live_streaming{
-    width: 80%;
-}
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;}
 
 .live_chat{
-    width: 20%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
 }
-*/
+
   
