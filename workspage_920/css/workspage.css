@@ -37,9 +37,9 @@ button {
 }
 #works__container {
     position: relative;
-    width: 100vw;
+   /* width: 100vw;
     height: calc(100vw * 9/16);
-    max-height: calc(100vh - 99px);
+   */ max-height: calc(100vh - 99px);
     max-width: calc((100vh - 99px) * 16/9);
     overflow: auto;
     -webkit-overflow-scrolling: touch;
