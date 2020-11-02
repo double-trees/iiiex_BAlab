@@ -27,7 +27,7 @@ button {
 } */
 
 #container {
-    width: 751px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -37,13 +37,15 @@ button {
 }
 #works__container {
     position: relative;
-   /* width: 100vw;
+    width: 100vw;
     height: calc(100vw * 9/16);
-   */ max-height: calc(100vh - 99px);
-    max-width: calc((100vh - 99px) * 16/9);
+    max-height: calc(100vh - 150px);
+   /* max-width: calc((100vh - 200px) * 16/9);*/
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     margin: auto; /* 左右の余白を黒色で埋めたい*/ 
+
+    margin: 0 auto;
 
     display: flex;
 }
@@ -76,18 +78,18 @@ button {
 }
 
 
-#title__container {
+.title__container {
     display: flex;
     margin: 24.5px 0;
 }
 
-#title__container p {
-    width: 559px;
-    font-size: 40px;
+.title__container p {
+   /* width: 559px;*/
+    font-size: 30px;
     line-height: 100%;
     text-align: center;
-    margin: 0;
-    margin-left: 96px;
+    margin: 0 auto;
+   /* margin-left: 96px;*/
 }
 
 .title_jp {
@@ -133,11 +135,12 @@ button {
     margin: 0;
 }
 
-#caption__container {
+.caption__container {
     padding: 0 30px;
+    width: 50wh;
 }
 
-#caption__container p, ul {
+#__container p, ul {
     font-size: 20px;
     line-height: 150%;
     color: #000000;
@@ -146,10 +149,25 @@ button {
 
 .caption_jp {
     display: block;
+    text-indent: 1em;
+    margin: 1% 0;
 }
 
+
+.caption_title_jp {
+    display: block;
+    text-indent: 1em;
+    margin: 0;
+    font-size: 25px;
+    text-align:center
+
+
+}
+
+
 .caption_en {
-    display: none;
+    display: block;
+    text-indent: 2em;
 }
 
 #buttons__container {
@@ -468,9 +486,28 @@ button {
 }
 
 #list{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#play_list{
     margin: 10px auto;
     text-align: center;
+    width:  100%;
+    height: 0;
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
 }
+
+#play_list iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 auto;
+  }
 
 .list_title {
     margin: 10px auto;
@@ -479,6 +516,8 @@ button {
     line-height: 100%;
     text-align: center;
 }
+
+
 
 #button_s{
     display: flex;
@@ -555,17 +594,80 @@ margin: 10px 0px;
   }
  
 
-.live_streaming{
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: flex;}
+#live_streaming {
+    
+   height: 100%;
+   display: flex;
+    margin: auto;
 
-.live_chat{
+   
+    width:  75%;
+    max-width: calc((100vh - 150px)*16/9);
+    margin: 0;
     position: relative;
-    width:  100%;
-    height: auto;
+  /*  padding-top: 56.25%;
+  */  overflow: hidden;
+}
+
+#live_streaming iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 auto;
+  }
+
+
+
+#live_chat {
+    
+    height: 100%;
+    display: flex;
+     margin: auto;
+ 
+     text-align: center;
+     width:  50%;
+    /* max-width: calc((100vh - 150px)*4/9);
+ */   
+     position: relative;
+   /*  padding-top: 56.25%;
+   */  overflow: no-display;
+ }
+ 
+ #live_chat iframe {
+     position: relative;
+     top: 0;
+     left: 100;
+     width: 100% !important;
+     height: 100% !important;
+     margin: 0 auto;
+   }
+ 
+
+.caption_text{
+    font-size:13px ;
+   
+width: 100%;
+display: block;
+}
+.after_text_1{
+    width: 50%;
+    margin: 1% auto;
+}
+
+#after_text{
     display: flex;
 }
 
+@media screen and (max-width: 850px) {
+    #after_text{
+        display: block;
+}
+.after_text_1{
+    width: 100%;
+    margin: 1% auto;
+}
+}
   
+
