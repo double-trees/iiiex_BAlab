@@ -629,9 +629,9 @@ margin: 10px 0px;
     display: flex;
      margin: 0;
  
-   /* text-align: center;
-    width: min(100vw-((100vh - 150px)*16/9), 100vw-(480px*16/9));
-   */
+/*    text-align: center;*/
+ width: 100%;
+   
 
    position: relative;
    /*  padding-top: 56.25%;
