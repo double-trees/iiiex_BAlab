@@ -33,21 +33,22 @@ button {
 }
 
 #works__cover {
-	background: #000000;
+    background: #000000;
 }
 #works__container {
     position: relative;
     width: 100vw;
-    height: calc(100vw * 9/16);
-    max-height: calc(100vh - 150px);
+    height: /*calc(100vw * 9/16);
+    max-height: */max(calc(100vh - 150px),480px);
    /* max-width: calc((100vh - 200px) * 16/9);*/
-    overflow: auto;
+  /* min-height: min(100wh,300px);
+   */ overflow: auto;
     -webkit-overflow-scrolling: touch;
-    margin: auto; /* 左右の余白を黒色で埋めたい*/ 
-
-    margin: 0 auto;
+    margin: 0 auto; /* 左右の余白を黒色で埋めたい*/ 
 
     display: flex;
+    justify-content: center;
+    
 }
 /*
 #works__container iframe {
@@ -598,12 +599,14 @@ margin: 10px 0px;
     
    height: 100%;
    display: flex;
-    margin: auto;
+    margin: 0;
 
    
-    width:  75%;
-    max-width: calc((100vh - 150px)*16/9);
-    margin: 0;
+   /* width:  75%;
+    max*/width: max(calc((100vh - 150px)*16/9),calc(480px*16/9)); 
+
+    
+    
     position: relative;
   /*  padding-top: 56.25%;
   */  overflow: hidden;
@@ -624,21 +627,21 @@ margin: 10px 0px;
     
     height: 100%;
     display: flex;
-     margin: auto;
+     margin: 0;
  
-     text-align: center;
-     width:  50%;
-    /* max-width: calc((100vh - 150px)*4/9);
- */   
-     position: relative;
+   /* text-align: center;
+    width: min(100vw-((100vh - 150px)*16/9), 100vw-(480px*16/9));
+   */
+
+   position: relative;
    /*  padding-top: 56.25%;
-   */  overflow: no-display;
+   */  overflow: scroll;
  }
  
  #live_chat iframe {
-     position: relative;
+     position: absolute;
      top: 0;
-     left: 100;
+     left: 0;
      width: 100% !important;
      height: 100% !important;
      margin: 0 auto;
@@ -668,6 +671,13 @@ display: block;
     width: 100%;
     margin: 1% auto;
 }
+}
+
+@media screen and (max-width:  calc((100wh-((100vh - 150px)*16/9)))+max(calc((100vh - 150px)*16/9),calc(480px*16/9))) {
+    #live_chat iframe{
+        display: none;
+}
+
 }
   
 
