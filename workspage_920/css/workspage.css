@@ -635,7 +635,7 @@ margin: 10px 0px;
 
    position: relative;
    /*  padding-top: 56.25%;
-   */  overflow: scroll;
+   */  overflow: hidden;
    
  }
  
@@ -643,10 +643,9 @@ margin: 10px 0px;
      position: absolute;
      top: 0;
      left: 0;
-     width: 100% !important;
+     width: 120% !important;
      height: 100% !important;
      margin: 0 auto;
-     padding: 0;
    }
  
 
