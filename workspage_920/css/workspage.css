@@ -39,7 +39,7 @@ button {
     position: relative;
     width: 100vw;
     height: /*calc(100vw * 9/16);
-    max-height: */max(calc(100vh - 150px),480px);
+    max-height: */max(calc(100vh - 150px),calc(720px/16*9));
    /* max-width: calc((100vh - 200px) * 16/9);*/
   /* min-height: min(100wh,300px);
    */ overflow: auto;
@@ -603,7 +603,7 @@ margin: 10px 0px;
 
    
    /* width:  75%;
-    max*/width: max(calc((100vh - 150px)*16/9),calc(480px*16/9)); 
+    max*/width: max(calc((100vh - 150px)*16/9),720px); 
 
     
     
@@ -630,12 +630,13 @@ margin: 10px 0px;
      margin: 0;
  
 /*    text-align: center;*/
- width: 100px;
+ width: 300px;
    
 
    position: relative;
    /*  padding-top: 56.25%;
    */  overflow: scroll;
+   
  }
  
  #live_chat iframe {
@@ -645,6 +646,7 @@ margin: 10px 0px;
      width: 100% !important;
      height: 100% !important;
      margin: 0 auto;
+     padding: 0;
    }
  
 
@@ -673,8 +675,8 @@ display: block;
 }
 }
 
-@media screen and (max-width:  calc((100wh-((100vh - 150px)*16/9)))+max(calc((100vh - 150px)*16/9),calc(480px*16/9))) {
-    #live_chat iframe{
+@media screen and (max-width: 1080px) {
+    #live_chat{
         display: none;
 }
 
