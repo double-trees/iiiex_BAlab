@@ -49,10 +49,12 @@
 
   <script src="timetable.js"></script>
 </head>
+
 <body>
+
   <div id="works__cover">
     <div id="works__container">
-     <div id="live_streaming">
+      <div id="live_streaming">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/KMEoEH4DRq4" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
@@ -66,84 +68,172 @@
     </div>
   </div>
 
-  <!--  <div id=exp>
-    <h1>ここに上から作品説明・実験説明をするよ．
-      実験説明の後半にはお家でやってみようコーナーも入れるよ</h1>
-  </div>
-  <div id=twitter>
-    <h1>右の端にに作品のアカウントをぶち込むよ!!</h1>
-    
- 
 
-    <a class="twitter-timeline" width="300" height="1000" href="https://twitter.com/iiiexhibition?ref_src=twsrc%5Etfw">Tweets by iiiexhibition</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-  </div>
--->
-<button type="button" onclick="alert('OK')">OK</button>
-
-<!--  <div id="button_s">
-
-    <div id="buttons_guest">
-
-      <div class="suiteki">
-        <img src="./img/works/button_sample.png" 　width="100px" height="100px">
-      </div>
-      <div class="suiteki">
-        <img src="./img/works/button_sample.png" 　width="100px" height="100px">
-      </div>
-      <div class="suiteki">
-        <img src="./img/works/button_sample.png" 　width="100px" height="100px">
-      </div>
+  <div id="exp">
+    <div id="buttons__exp">
+      <a href="#!" onclick="alert('test')" style="text-decoration:none;">
+        <p class="blue_button">青の水滴
+        </p>
+      </a>
+      <a href="#!" onclick="alert('test')" style="text-decoration:none;">
+        <p class="yellow_button">黄色の水滴</p>
+      </a>
+      <a href="#!" onclick="alert('test')" style="text-decoration:none;">
+        <p class="call_button">中の人を呼ぶ</p>
+      </a>
     </div>
-
     <form action="comment.php" method="post">
       <div class="item">
         <label class="label">匿名チャット</label>
-        <input class="inputs" type="text" name="comment" placeholder="コメント">
+
       </div>
       <div class="btn-area">
+        <input class="inputs" type="text" name="comment" placeholder="コメント">
         <input type="submit" value="送信">
       </div>
     </form>
 
+    <div class="exp_button_descrip">
+      <p>
+        みんなが水滴のボタンを押すと，いくらか経った後に水滴の量が増えます．<br>みんなが中の人を呼ぶボタンを押すと中の人が実験室でしゃべり始めるかもしれないし，しゃべり始めないかもしれません．<br>チャットや匿名コメント欄には気づいたことや中の人へのメッセージ，目の前の実験をこう変えて欲しいなど書いてください，それに反応します．
+      </p>
+    </div>
   </div>
 
-  <button type="button" class="btn_1"　autofocus="true">これはボタンです。</button>
-  Youtubeは申請の影響でまだLiveとチャットが貼れないので放置してます．4日経ってもまだOKこない…
-  <br>
-  ここに水滴ボタン・中の人ボタン・匿名チャットボタンを作るよ!!<br>webで使えそうな素材とかあったら欲しいな．なかったら自分で作るよ!!
--->
+  <div id="sp">
+    <div id="exp_sp">
+      <div id="buttons__exp_sp">
+        <a href="#!" onclick="alert('test')" style="text-decoration:none;">
+          <p class="blue_button">青の水滴
+          </p>
+        </a>
+        <a href="#!" onclick="alert('test')" style="text-decoration:none;">
+          <p class="yellow_button">黄色の水滴</p>
+        </a>
+        <a href="#!" onclick="alert('test')" style="text-decoration:none;">
+          <p class="call_button">中の人を呼ぶ</p>
+        </a>
+      </div>
+
+      <div class="exp_button_descrip">
+        <p>みんなが水滴のボタンを押すといくらか経った後に水滴の量が増えます．<br>みんなが中の人を呼ぶボタンを押すと中の人が実験室でしゃべり始めるかもしれないし，しゃべり始めないかもしれません．</p>
+      </div>
+    </div>
+
+    <div id="chat_sp">
+      <div id="live_chat_sp">
+        <iframe frameborder="0"
+          src="https://www.youtube.com/live_chat?v=KMEoEH4DRq4&embed_domain=double-trees.github.io"
+          allowfullscreen></iframe>
+
+      </div>
+      <form action="comment.php" method="post">
+        <div class="item">
+          <label class="label">匿名チャット</label>
+
+        </div>
+        <div class="btn-area">
+          <input class="inputs" type="text" name="comment" placeholder="コメント">
+          <input type="submit" value="送信">
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
   <div id="title_main">
+    <hr>
     <p>B et A laboratorium</p> <!-- タイトル（日本語） -->
     <hr>
   </div>
+
   <div class="wrapper">
     <section class="main">
+      <p class="descrip_title">タイムテーブル</p>
       <div id="table">
-        <p class="descrip_title">タイムテーブル</p>
+        <hr>
+        <p>予定は中の人の都合により予告なく変更する場合があります．<br>皆さんのコメントでも変わるかもしれません．</p>
         <div class="table_show"></div>
       </div>
-      <p class="descrip_title">作品説明</p>
-      <div class="archive">
-        <div>
-          <p>
-            ここに作品の説明文を入れます<br>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。writerに校正頼もっかなって思ってみたり思わなかったり．それよりも先に文面を作ってないので始まらない．
-          </p>
+
+
+      <details>
+        <summary>
+          <p class="descrip_title">作品説明</p>
+          <hr>
+        </summary>
+        <div class="archive">
+          <div>
+            <p>
+              これまで，科学とアートを融合する試みは様々なところで行われてきました．
+
+              ここに作品の説明文を入れます<br>あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。writerに校正頼もっかなって思ってみたり思わなかったり．それよりも先に文面を作ってないので始まらない．
+
+              今回滴定実験にインスピレーションを受けて，本作品を作りました．作者が高校時代に酸化還元滴定を繰り返し，その実験を観察した経験
+            </p>
+          </div>
         </div>
-        <p class="descrip_title">実験説明</p>
-      </div>
-      <div class="archive">
-        <div>
-          <p>ここに実験の内容について入れます．おうちでもできるような実験の紹介もします．なお，実験によって生じた怪我等の責任は負わないからね．良い子のみんなはおうちのひとに相談してからやってね．的な話も</p>
+      </details>
+
+      <details>
+        <summary>
+          <p class="descrip_title">実験説明</p><hr>
+        </summary>
+        <div class="archive">
+          <div>
+            <p>
+              この実験では酸と塩基による中和反応を用いています．BTB溶液を溶かしたビーカーの中に水酸化カルシウム水溶液(青の水滴)とクエン酸水溶液(黄色の水滴)の水滴を少しずつたらしています．それでは詳しくみていきましょう．
+            </p>
+            <p>
+              青い水滴の水酸化カルシウム水溶液(石灰水)と黄色の水滴のクエン酸水溶液はどのような物質なのでしょうか．水酸化カルシウムは消石灰とも呼ばれ，酸性になってしまった畑の土を中和したり，食品添加物として使われます．昔は，学校の運動場の白線として使われていました．二酸化炭素で白く濁る石灰水として覚えている人もいるのではないでしょうか．クエン酸は，レモンやグレープフルーツなどの柑橘類に含まれています．酸っぱいと感じる原因の物質です．そのほかにも水垢取りに使われたりもします．
+            </p>
+
+            <p>
+              つづいて化学反応についてみていきましょう．水酸化カルシウム水溶液(青の水滴)とクエン酸水溶液(黄色の水滴)を混ぜたら中和反応という反応がおきました．中和反応といえば，小学校の理科の授業の中で酸性である塩酸と塩基性の水酸化ナトリウム水溶液を混ぜたら中性の塩化ナトリウム(食塩)水溶液ができたのを覚えている方もいるかと思います．今回の実験もこれと同じ原理です．塩基性の水溶液である水酸化ナトリウム水溶液と酸性の水溶液であるクエン酸水溶液により中和反応が起こったのです．
+              ちなみに，アルカリ性というワードを思い出した方いると思います．厳密には異なりますが，ここでは塩基性=アルカリ性と考えていただいて問題ありません．水酸化カルシウムは水酸化イオンとクエン酸はカルボキシ基の水素イオンの作用によりそれぞれ塩基性と酸性を示します．
+              ここでpHというものについてお話しします．これは酸性と塩基性の強さを数値で表したものです．0から14までの値をとり，pH=7を中性として，値が小さいと酸性がそれだけ強く，値が大きいと塩基性がそれだけ強いということを表します．例えば人間の胃酸はpH=1程度，石けんはpH=10程度です．
+              中和反応ではpHが7より小さい酸性の水溶液と7より大きい塩基性の水溶液を混ぜることで，混ぜた水溶液のpHは中性の7に近づくのです．(等量反応させた場合でもpH=7になる場合とならない場合があります．)
+              ちなみにpHは水溶液中の水素イオンというものの濃度が関係しています．この説明をすると長くなるので，興味のある方は調べてみてください．
+              [ここに例の図]
+              つづいて，pHの値によって色を変化させるものを指示薬と言います．今回用いたBTB溶液も指示薬の一つで，ほかにはフェノールフタレイン溶液や，メチルレッド溶液，メチルオレンジ溶液など変化するpHの値に応じて様々な指示薬があります．BTB溶液は酸性で黄色，中性で緑色，塩基性で青色と変化します．したがって，今回の実験では水酸化カルシウムが多いと青色に，クエン酸が多いと黄色になるというわけだったのです．
+            </p>
+            <p>
+              水溶液の濃度を特定するための定量実験で滴定が用いられます．濃度のわかってる水溶液と滴下した水溶液の量を測定し，
+
+
+            </p>
+          </div>
         </div>
-      </div>
+      </details>
+      <details>
+        <summary>
+          <p class="descrip_title">おうちでやってみよう</p><hr>
+        </summary>
+        <div class="archive">
+          <div>
+            <p>
+              この指示薬はスーパーで売ってるものを使って代用することができます．例えば紫キャベツが有名ですね．紫キャベツをお湯で煮出すと指示薬になり，酸性で赤色，塩基性で青色になります．小学生の頃懐かしいリトマス試験紙と同じ色の変化ですね．これは，紫キャベツに含まれているアントシアニンという物質が作用しています．それならばアントシアニンが含まれていればいいと考えられるのではないでしょうか?そうです，ただどんなものでもうまくいくと言うわけではありません．実際にいくつか実験してみたところ，紫色の食用色素と紫色の野菜ジュースを用いると綺麗に変化を観察することができました．ぜひ，皆さんも試してみてください．また，ほかにもうまくいくものを見つけてチャットで教えてください．
+              </p></div>
+<div><p>              よいこのみんなへ: おうちでじっけんをするときにはおうちのひとといっしょにじっけんするようにしましょう．
+            </p>
+            <p class="caution">注意: 混ぜるな危険と表示されている製品(塩素系と酸性系)は絶対に混ぜないでください．有害な気体が発生して大変危険です．また，換気の良い場所で実験を行うようにしてください．
+            </p>
+          </div>
+          <p>実験によって生じた事故や損害につきましては当方は責任をおいませんのでご了承ください．</p>
+
+        </div>
+      </details>
+
 
     </section>
     <section class="side">
-      <p class="descrip_title">作品Twitter</p>
-      <a class="twitter-timeline" height="1000px" href="https://twitter.com/iiiexhibition?ref_src=twsrc%5Etfw">Tweets by
-        iiiexhibition</a>
+      <p class="descrip_title">作品Twitter</p><hr>
+      <a class="twitter-timeline" height="1000px" href="https://twitter.com/B_et_A_Labo?ref_src=twsrc%5Etfw">Tweets by
+        B_et_A_Labo</a>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
     </section>
   </div>
 
@@ -188,7 +278,8 @@
               <p class="caption_en">
                 Experiments are being conducted in a small laboratory on the screen. It is done slowly and slowly, but
                 in real time.
-                We don't know where the laboratory is. but it IS in my screen and in your screen, too. The desk in front
+                We don't know where the laboratory is. but it IS in my screen and in your screen, too. The desk in
+                front
                 of you is a dedicated laboratory table.
                 What changes can happen by your interaction?
                 What kind of different situation can you observe when you visit the lab again?
@@ -260,7 +351,7 @@
 
           <ul class="author__name_jp">
             <li>Lab manager:&#9Hirotaka Hayashi</li> <!-- 1人目の名前（日本語） -->
-            <li>一人が寂しいので大層な自己紹介でもしようかな．</li> <!-- 1人目の名前（日本語） -->
+            <li>一人が寂しいので大層な自己紹介でもしようかなと思ってるけど，時間があったらやります．</li> <!-- 1人目の名前（日本語） -->
           </ul>
           <ul class="author__name_en">
             <li>Hirotaka Hayashi</li> <!-- 1人目の名前（英語） -->

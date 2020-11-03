@@ -1,3 +1,5 @@
+
+
 // 表の動的作成
 function makeTable(data, tableId){
     // 表の作成開始
@@ -23,16 +25,46 @@ function makeTable(data, tableId){
 }
 window.onload = function(){ 
     var now = new Date();
+    var hour=now.getUTCHours()+9;
+    var date=now.getUTCDate();
+if(hour>24){
+    hour=hour-24;
+    date=date+1;
+}
+var today=(now.getUTCMonth()+1).toString()+"/"+date.toString()
     // 表のデータ
 
-var data = [["日","時間", "内容"],
-            ["ここに", "時間割を", "載せます"],
-            ["まだ決まってないので","時刻(UTC)を", "載せときます"],
-            [now.getUTCMonth()+1,"月", "あ"],
-            [now.getUTCDate(),"日" , "い"],
-            [now.getUTCHours(),"時" , "う"],
-            [now.getUTCMinutes(),"分" , "え"],
-            [now.getUTCSeconds(),"秒" , "お"]];
+    const data1=[["日","開始","","終了", "内容","説明"],
+    [today, "12:00", "〜",],
+    ["","24:59", "〜",],
+    [now.getUTCMonth()+1,"月", "あ",],
+    [date,"日" , "い",],
+    [hour,"時" , "う",],
+    [now.getUTCMinutes(),"分" , "え",],
+    [now.getUTCSeconds(),"秒" , "お",]];
+
+    const data2=[["日","開始","〜","終了", "内容","説明"],
+    [today, "時間割を", "載せます",],
+    ["","時刻(UTC)を", "載せときます",],
+    [now.getUTCMonth()+1,"月", "あ",],
+    [date,"日" , "い",],
+    [hour,"時" , "う",],
+    [now.getUTCMinutes(),"分" , "え",],
+    [now.getUTCSeconds(),"秒" , "お",]];
+
+/*var data = [["日","開始","〜","終了", "内容","説明"],
+            [today, "時間割を", "載せます",],
+            ["","時刻(UTC)を", "載せときます",],
+            [now.getUTCMonth()+1,"月", "あ",],
+            [date,"日" , "い",],
+            [hour,"時" , "う",],
+            [now.getUTCMinutes(),"分" , "え",],
+            [now.getUTCSeconds(),"秒" , "お",]];*/
+        
+
+//var data=data1.concat(data2);
+var data=data1;
+data1.push(data2[0]);
 
 // 表の動的作成
 makeTable(data,"table");
