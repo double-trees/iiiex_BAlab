@@ -488,17 +488,20 @@ button {
 
 
 #table{
-    display: block;
+    display: flex;
+    flex-direction: column;
     font-size: 20px;
-    width: 80%;
+    width: 100%;
+    margin: 0px auto;
+    justify-content: center;
     text-align: center;
-    margin: 10px auto;
 }
 #table hr{
     width: 400px;
     margin: 0 auto;
 }
 .table_show{
+   
     text-align: center;
     margin: 10px auto;
     justify-content: center;
@@ -814,4 +817,7 @@ details[open] summary {
 summary hr{
     margin: 0 auto;
     width: 400px;
+}
+.twitter-follow-button iframe{
+    margin: 0 auto;
 }

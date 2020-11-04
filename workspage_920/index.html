@@ -48,6 +48,18 @@
   <script src="iine_app/iine.js"></script>
 
   <script src="timetable.js"></script>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170084949-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-170084949-1');
+</script>
+
 </head>
 
 <body>
@@ -72,14 +84,14 @@
 
   <div id="exp">
     <div id="buttons__exp">
-      <a href="#!" onclick="alert('test')" style="text-decoration:none;">
+      <a href="#!" onclick="gtag('event', 'blue', {'event_category': '920', 'event_label': 'wide', 'value': '1'});" style="text-decoration:none;">
         <p class="blue_button">青の水滴
         </p>
       </a>
-      <a href="#!" onclick="alert('test')" style="text-decoration:none;">
+      <a href="#!" onclick="gtag('event', 'yellow', {'event_category': '920', 'event_label': 'wide', 'value': '1'});" style="text-decoration:none;">
         <p class="yellow_button">黄色の水滴</p>
       </a>
-      <a href="#!" onclick="alert('test')" style="text-decoration:none;">
+      <a href="#!" onclick="gtag('event', 'call', {'event_category': '920', 'event_label': 'wide', 'value': '1'});" style="text-decoration:none;">
         <p class="call_button">中の人を呼ぶ</p>
       </a>
     </div>
@@ -96,7 +108,7 @@
 
     <div class="exp_button_descrip">
       <p>
-        みんなが水滴のボタンを押すと，いくらか経った後に水滴の量が増えます．<br>みんなが中の人を呼ぶボタンを押すと中の人が実験室でしゃべり始めるかもしれないし，しゃべり始めないかもしれません．<br>チャットや匿名コメント欄には気づいたことや中の人へのメッセージ，目の前の実験をこう変えて欲しいなど書いてください，それに反応します．
+        みんなが水滴のボタンを押すと，いくらか経った後に水滴の量が増えます．<br>みんなが中の人を呼ぶボタンを押すと中の人が実験室でしゃべり始めるかもしれないし，しゃべり始めないかもしれません．<br>チャットや匿名コメント欄には気づいたことや中の人へのメッセージ実験をこう変えて欲しいなどなんでも書いてください，ゆるっと反応します．
       </p>
     </div>
   </div>
@@ -104,20 +116,20 @@
   <div id="sp">
     <div id="exp_sp">
       <div id="buttons__exp_sp">
-        <a href="#!" onclick="alert('test')" style="text-decoration:none;">
+        <a href="#!" onclick="gtag('event', 'blue', {'event_category': '920', 'event_label': 'sp', 'value': '1'});" style="text-decoration:none;">
           <p class="blue_button">青の水滴
           </p>
         </a>
-        <a href="#!" onclick="alert('test')" style="text-decoration:none;">
+        <a href="#!" onclick="gtag('event', 'yello', {'event_category': '920', 'event_label': 'sp', 'value': '1'});" style="text-decoration:none;">
           <p class="yellow_button">黄色の水滴</p>
         </a>
-        <a href="#!" onclick="alert('test')" style="text-decoration:none;">
+        <a href="#!" onclick="gtag('event', 'call', {'event_category': '920', 'event_label': 'sp', 'value': '1'});" style="text-decoration:none;">
           <p class="call_button">中の人を呼ぶ</p>
         </a>
       </div>
 
       <div class="exp_button_descrip">
-        <p>みんなが水滴のボタンを押すといくらか経った後に水滴の量が増えます．<br>みんなが中の人を呼ぶボタンを押すと中の人が実験室でしゃべり始めるかもしれないし，しゃべり始めないかもしれません．</p>
+        <p>みんなが水滴のボタンを押すといくらか経った後に水滴の量が増えます．<br>みんなが中の人を呼ぶボタンを押すと中の人が実験室でしゃべり始めるかもしれないし，しゃべり始めないかもしれません．<br>チャットや匿名コメント欄には気づいたことや中の人へのメッセージ実験をこう変えて欲しいなどなんでも書いてください，ゆるっと反応します．</p>
       </div>
     </div>
 
@@ -130,7 +142,7 @@
       </div>
       <form action="comment.php" method="post">
         <div class="item">
-          <label class="label">匿名チャット</label>
+          <label class="label">匿名コメント</label>
 
         </div>
         <div class="btn-area">
@@ -230,6 +242,8 @@
     </section>
     <section class="side">
       <p class="descrip_title">作品Twitter</p><hr>
+      <a href="https://twitter.com/B_et_A_Labo?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @B_et_A_Labo</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       <a class="twitter-timeline" height="1000px" href="https://twitter.com/B_et_A_Labo?ref_src=twsrc%5Etfw">Tweets by
         B_et_A_Labo</a>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -383,7 +397,7 @@
         </div>
         <!-- いいねボタンここまで -->
         <a class="twitter"
-          href="https://twitter.com/intent/tweet?url=https://extra2020.iiiexhibition.com/works/&hashtags=WHOZIPSYOU&via=iiiexhibition"
+          href="https://twitter.com/intent/tweet?url=https://extra2020.iiiexhibition.com/works/&hashtags=WH&via=iiiexhibition"
           target="_blank" data-via="@iiiexhibition" data-hashtags="iiiEx" data-related="iiiexhibition"
           data-show-count="false"><img src="./img/twitterblack.png" alt=""></a>
       </div>
