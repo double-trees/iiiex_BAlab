@@ -47,8 +47,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="iine_app/iine.js"></script>
 
-  <script src="timetable.js"></script>
-
+  <script src="./timetable.js"></script>
+  <script src="./comment/comment.js"></script>
+ <!-- <script src="./comment/getSpreadsheetTitle.js"></script>
+  <script src="./comment/spreadSheetService.js"></script>
+  -->
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170084949-1"></script>
@@ -67,14 +70,16 @@
   <div id="works__cover">
     <div id="works__container">
       <div id="live_streaming">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/KMEoEH4DRq4" frameborder="0"
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lJGHqasLjnc?rel=0&autoplay=1" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
       <div id="live_chat">
         <iframe frameborder="0"
-          src="https://www.youtube.com/live_chat?v=KMEoEH4DRq4&embed_domain=double-trees.github.io"
+          src="https://www.youtube.com/live_chat?v=lJGHqasLjnc&embed_domain=iiiexhibition.com"
           allowfullscreen></iframe>
+          <!--iiiexhibition.com-->
+          <!--double-trees.github.io-->
 
       </div>
     </div>
@@ -95,13 +100,13 @@
         <p class="call_button">中の人を呼ぶ</p>
       </a>
     </div>
-    <form action="comment.php" method="post">
+
+        <form action="comment.php" method="post" onsubmit="post_message0();return false;" >
       <div class="item">
         <label class="label">匿名チャット</label>
-
       </div>
       <div class="btn-area">
-        <input class="inputs" type="text" name="comment" placeholder="コメント">
+        <input class="inputs" type="text" name="comment" placeholder="コメント" value="">
         <input type="submit" value="送信">
       </div>
     </form>
@@ -138,17 +143,17 @@
     <div id="chat_sp">
       <div id="live_chat_sp">
         <iframe frameborder="0"
-          src="https://www.youtube.com/live_chat?v=KMEoEH4DRq4&embed_domain=double-trees.github.io"
+          src="https://www.youtube.com/live_chat?v=lJGHqasLjnc&embed_domain=double-trees.github.io"
           allowfullscreen></iframe>
 
       </div>
-      <form action="comment.php" method="post">
+      <form action="comment.php" method="post" onsubmit="post_message1();return false;" >
         <div class="item">
           <label class="label">匿名コメント</label>
 
         </div>
         <div class="btn-area">
-          <input class="inputs" type="text" name="comment" placeholder="コメント">
+          <input class="inputs" type="text" name="comment" placeholder="コメント" value="">
           <input type="submit" value="送信">
         </div>
       </form>
@@ -393,7 +398,7 @@
       <p> 林&ensp;裕嵩&emsp;Hirotaka&ensp;Hayashi</p>
       </div>
       <div class="my_descrip">
-        <p>東京大学大学院 学際情報学府 学際情報学専攻 先端表現情報学コース 修士課程1年 矢谷研究室所属．学士 (工学)．専門分野はHCI (Human Computer interaction)．学部時代は東京大学工学部電子情報工学科に所属．情報工学を学びながら，自分の学んできた科学技術をアウトプットするため，サイエンスコミュニケーション活動を行う.小学生を中心とした幅広い対象に，サイエンスショーや実験教室，ワークショップといったコンテンツ制作をすると同時に，科学館や学園祭で行う大規模科学技術イベントの運営も行う．NPO法人サイエンスリンク現理事，元副代表，東京大学サイエンスコミュニケーションサークルCAST元代表(現在はOB)．現在は，オンラインを使ったサイエンスコミュニケーション活動をできないか模索中．
+        <p>東京大学大学院 学際情報学府 学際情報学専攻 先端表現情報学コース 修士課程1年 矢谷研究室所属．学士 (工学)．専門分野はHCI (Human Computer interaction)．学部時代は東京大学工学部電子情報工学科に所属．情報工学を学びながら，自分の学んできた科学技術をアウトプットするため，サイエンスコミュニケーション活動を行う.小学生を中心とした幅広い対象に，サイエンスショーや実験教室，ワークショップといったコンテンツ制作をすると同時に，科学館や学園祭で行う大規模科学技術イベントの運営も行う．NPO法人サイエンスリンク現理事，元副代表，東京大学サイエンスコミュニケーションサークルCAST元副代表(現在はOB)．現在は，オンラインを使ったサイエンスコミュニケーション活動をできないか模索中．本制作展では初めてアート表現に挑戦する．
         </p>
       </div>
       <div class="my_contact">
