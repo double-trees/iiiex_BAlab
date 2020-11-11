@@ -184,7 +184,7 @@ button {
 #buttons__container {
     margin: 24.5px 0;
     justify-content: space-between;
-    height: 130px;
+ /*   height: 130px;*/
 }
 
 #buttons__container a {
@@ -223,9 +223,9 @@ button {
     transition: .3s;
 }
 
-#buttons__container .comment:hover,.twitter:hover,.return:hover {
+/*#buttons__container .comment:hover,.twitter:hover,.return:hover {
     transform: scale(1.2);
-}
+}*/
 
 #buttons__container .comment img {
     position: absolute;
@@ -499,13 +499,16 @@ button {
     margin: 0px auto;
     justify-content: center;
     text-align: center;
+    line-height : 1.5em;
+    
+    
 }
 #table hr{
     width: 400px;
     margin: 0 auto;
 }
 .table_show{
-   
+    padding: 10px auto;
     text-align: center;
     margin: 0px auto;
     justify-content: center;

@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
 
-
-
 <head prefix="og:url" content="https://extra2020.iiiexhibition.com/works/">
   <meta property="og:title" content="B et A laboratorium - 東京大学制作展2020" />
   <meta property="og:type" content="website" />
@@ -48,12 +46,12 @@
   <script src="iine_app/iine.js"></script>
 
   <script src="./timetable.js"></script>
-  <script src="./comment/comment.js"></script>
-  <!-- <script src="./comment/getSpreadsheetTitle.js"></script>
-  <script src="./comment/spreadSheetService.js"></script>
-  -->
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script src="./comment.js"></script>
+ 
+ <script src="https://unpkg.com/stein-js-client"></script>
+ 
+ 
+ <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170084949-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -104,7 +102,7 @@
       </a>
     </div>
 
-    <form action="comment.php" method="post" onsubmit="post_message0();return false;">
+    <form action="#!" method="post" onsubmit="post_message0();return false;">
       <div class="item">
         <label class="label">匿名チャット</label>
       </div>
@@ -143,7 +141,7 @@
 
       <div class="exp_button_descrip">
         <p>
-          みんなが水滴のボタンを押すといくらか経った後に水滴の量が増えます．<br>みんなが中の人を呼ぶボタンを押すと中の人が実験室でしゃべり始めるかもしれないし，しゃべり始めないかもしれません．<br>チャットや匿名コメント欄には気づいたことや中の人へのメッセージ実験をこう変えて欲しいなどなんでも書いてください，ゆるっと反応します．
+          みんなが水滴のボタンを押すといくらか経った後に水滴の量が増えます．<br>みんなが中の人を呼ぶボタンを押すと中の人が実験室でしゃべり始めるかもしれないし，しゃべり始めないかもしれません．<br>チャットや匿名コメント欄には気づいたことや中の人へのメッセージ，実験をこう変えて欲しい，実験室にこんなものを置いて欲しいなどなんでも書いてください，ゆるっと反応します．
         </p>
       </div>
     </div>
@@ -155,7 +153,9 @@
           allowfullscreen></iframe>
 
       </div>
-      <form action="comment.php" method="post" onsubmit="post_message1();return false;">
+
+
+      <form action="#!" method="post" onsubmit="post_message1();return false;">
         <div class="item">
           <label class="label">匿名コメント</label>
 
@@ -173,15 +173,44 @@
   <div id="title_main">
     <hr>
     <p>B et A laboratorium</p> <!-- タイトル（日本語） -->
-    <hr>
   </div>
+
+  <div id="buttons__container">
+    <div class="row">
+      <a href="https://iiiexhibition.com/log/2020/true/iiiex_adventure/#">
+        <div class="return"><img src="./img/return.png">
+          <p class="return_jp">他の作品をみる</p>
+          <p class="return_en">Other works</p>
+        </div>
+      </a>
+      <!-- いいねボタンここから -->
+      <div id="iine_wrap">
+        <!-- ボタン本体ここから -->
+        <button type="submit" id="iine">
+          <div class="iine_wrap">
+            <a class="button_good heart"><img src="./img/icon_loveheart.png"></a>
+            <div class="circle"></div>
+            <span id="countnum"></span>
+          </div>
+        </button>
+        <!-- ボタン本体ここまで -->
+      </div>
+      <!-- いいねボタンここまで -->
+      <a class="twitter"
+        href="https://twitter.com/intent/tweet?url=https://extra2020.iiiexhibition.com/works/&hashtags=WH&via=iiiexhibition"
+        target="_blank" data-via="@iiiexhibition" data-hashtags="iiiEx" data-related="iiiexhibition"
+        data-show-count="false"><img src="./img/twitterblack.png" alt=""></a>
+    </div>
+  </div>
+
+  <hr>
 
   <div class="wrapper">
     <section class="main">
-      <p class="descrip_title">タイムテーブル</p>
+      <p class="descrip_title">内容 -contents-</p>
       <div id="table">
         <hr>
-        <p>予定は中の人の都合により予告なく変更する場合があります．<br>皆さんのコメントでも変わるかもしれません．</p>
+        <p>表のいずれかの内容をお送りいたします．<br>皆さんのコメントで内容が変わるかもしれません．</p>
         <div class="table_show"></div>
       </div>
 
@@ -290,10 +319,9 @@
         <a href="https://twitter.com/B_et_A_Labo?ref_src=twsrc%5Etfw" class="twitter-follow-button"
           data-show-count="false">Follow @B_et_A_Labo</a> </div>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-　<!--      <a class="twitter-timeline" height="1000" href="https://twitter.com/B_et_A_Labo?ref_src=twsrc%5Etfw">Tweets by B_et_A_Labo</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
--->
-      <a class="twitter-timeline" data-height="1000" data-dnt="true" href="https://twitter.com/B_et_A_Labo?ref_src=twsrc%5Etfw">Tweets by B_et_A_Labo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+　<a class="twitter-timeline" height="1000" href="https://twitter.com/B_et_A_Labo?ref_src=twsrc%5Etfw">Tweets by B_et_A_Labo</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+    
     </section>
   </div>
 
@@ -418,7 +446,7 @@
         </div>
         <div class="my_descrip">
           <p>東京大学大学院 学際情報学府 学際情報学専攻 先端表現情報学コース 修士課程1年 矢谷研究室所属．学士 (工学)．専門分野はHCI (Human Computer
-            interaction)．学部時代は東京大学工学部電子情報工学科に所属．情報工学を学びながら，自分の学んできた科学技術をアウトプットするため，サイエンスコミュニケーション活動を行う.小学生を中心とした幅広い対象に，サイエンスショーや実験教室，ワークショップといったコンテンツ制作をすると同時に，科学館や学園祭で行う大規模科学技術イベントの運営も行う．NPO法人サイエンスリンク現理事，元副代表，東京大学サイエンスコミュニケーションサークルCAST元副代表(現在はOB)．現在は，オンラインを使ったサイエンスコミュニケーション活動をできないか模索中．本制作展では初めてアート表現に挑戦する．
+            Interaction)．学部時代は東京大学工学部電子情報工学科に所属．情報工学を学びながら，自分の学んできた科学技術をアウトプットするため，サイエンスコミュニケーション活動を行う.小学生を中心とした幅広い対象に，サイエンスショーや実験教室，ワークショップといったコンテンツ制作をすると同時に，科学館や学園祭で行う大規模科学技術イベントの運営も行った．NPO法人サイエンスリンク理事，元副代表，東京大学サイエンスコミュニケーションサークルCAST元副代表(現在はOB)．現在は，オンラインを使ったサイエンスコミュニケーション活動をできないか模索中．本制作展を通して初めてアート表現に挑戦する．
           </p>
         </div>
         <div class="my_contact">
@@ -455,7 +483,7 @@
       </div>
     -->
 
-
+<!--todo作品ページの全体改良が終わったらidの重複を直す-->
 
     <hr class="pc_only">
     <div id="buttons__container">
@@ -496,6 +524,8 @@
       <p>©2020 - IIIEXHIBITION</p>
     </div>
   </div>
+
+
 </body>
 
 </html>
