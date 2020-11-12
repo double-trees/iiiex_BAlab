@@ -40,31 +40,31 @@ $(function () {
       url: ajaxPath,
       data: { path: pathname, mode: 'show' }
     }).fail(function () {
-      alert('iine.jsのfolderpathの値を確認して下さい。');
+      // alert('iine.jsのfolderpathの値を確認して下さい。');
     }).done(function (res) {
       if (res < 0) {
         res = 0;
       }
-      count.innerHTML = res;
+      //count.innerHTML = res;
     });
   });
-
 
   // update
   $(document).on('click', '#iine', function (e) {
     e.preventDefault();
+    $('#countnum').text('');
     if (localStorage.getItem(pathname) == 'checked') {
       iineWrap.className = '';
       $('.button_good').children('img').attr('src', './img/icon_loveheart.png');
       localStorage.removeItem(pathname);
-      // ajax処理
+      ajax処理
       $.post(ajaxPath, {
         path: pathname,
         mode: 'uncheck'
       }).fail(function () {
-        alert('iine.jsのfolderpathの値を確認して下さい。');
+        // alert('iine.jsのfolderpathの値を確認して下さい。');
       }).done(function (res) {
-        count.innerHTML = res;
+        //count.innerHTML = res;
       });
     } else {
       iineWrap.className = 'checked';
@@ -73,15 +73,16 @@ $(function () {
         iineThanks.style.display = "block";
         fadeout();
       }
+      $('#countnum').text('1');
       localStorage.setItem(pathname, 'checked');
-      // ajax処理
+      //ajax処理
       $.post(ajaxPath, {
         path: pathname,
         mode: 'check'
       }).fail(function () {
-        alert('iine.jsのfolderpathの値を確認して下さい。');
+        // alert('iine.jsのfolderpathの値を確認して下さい。');
       }).done(function (res) {
-        count.innerHTML = res;
+        //count.innerHTML = res;
       });
     }
   });

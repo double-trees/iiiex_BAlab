@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
 
-<head prefix="og:url" content="https://extra2020.iiiexhibition.com/works/">
+<head prefix="og:url" content="https://www.iiiexhibition.com/yuna_adventure/#laboratorium">
   <meta property="og:title" content="B et A laboratorium - 東京大学制作展2020" />
   <meta property="og:type" content="website" />
   <meta property="og:description"
     content="画面の中の小さな実験室でゆっくりゆっくりとリアルタイムで科学実験が行われている。実験室はどこにあるかわからないが、わたしの画面の中にも、あなたの画面の中にもある。目の前の机は自分専用の実験台になりうる。あなたの働きかけで実験にどのような変化が生まれるだろうか。前と比べてどんな変化が起きているだろうか。さぁ、ScienceとArtとTechnologyの可能性を感じてみよう。" />
-  <meta property="og:image" content="" />
+  <meta property="og:image" content="https://www.iiiexhibition.com/yuna_adventure/img/920.jpg" />
   <meta property="og:site_name" content="B et A laboratorium - 東京大学制作展2020" />
   <meta property="og:locale" content="ja_JP" />
-  <meta property="og:url" content="https://extra2020.iiiexhibition.com/works/" />
+  <meta property="og:url" content="https://www.iiiexhibition.com/yuna_adventure/#laboratorium" />
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="B et A laboratorium - 東京大学制作展2020">
   <meta name="twitter:image"
-    content="https://object-storage.tyo2.conoha.io/v1/nc_7d0030b822e246239683a325ebfb1974/iiiex/works/src/og-img/814_1.jpg">
+    content="https://www.iiiexhibition.com/yuna_adventure/img/920.jpg">
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -47,7 +47,9 @@
 
   <script src="./timetable.js"></script>
   <script src="./comment.js"></script>
- 
+  <script src="./color_button.js"></script>
+
+  
  <script src="https://unpkg.com/stein-js-client"></script>
  
  
@@ -67,14 +69,15 @@
 
   <div id="works__cover">
     <div id="works__container">
-      <div id="live_streaming">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/i2G9uGTevNQ?rel=0&autoplay=1&vq=highres"
+      <div v id="live_streaming">
+       <iframe id="youtube_live" width="560" height="315" src=""
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
+    
       </div>
       <div id="live_chat">
-        <iframe frameborder="0" src="https://www.youtube.com/live_chat?v=lJGHqasLjnc&embed_domain=iiiexhibition.com"
+        <iframe id="youtube_chat_1" frameborder="0" src=""
           allowfullscreen></iframe>
         <!--iiiexhibition.com-->
         <!--double-trees.github.io-->
@@ -87,16 +90,16 @@
 
   <div id="exp">
     <div id="buttons__exp">
-      <a href="#!" onclick="gtag('event', 'blue', {'event_category': '920', 'event_label': 'wide', 'value': '1'});"
+      <a href="#!" onclick="blue_button()"
         style="text-decoration:none;">
         <p class="blue_button">青の水滴
         </p>
       </a>
-      <a href="#!" onclick="gtag('event', 'yellow', {'event_category': '920', 'event_label': 'wide', 'value': '1'});"
+      <a href="#!" onclick="yellow_button()"
         style="text-decoration:none;">
         <p class="yellow_button">黄色の水滴</p>
       </a>
-      <a href="#!" onclick="gtag('event', 'call', {'event_category': '920', 'event_label': 'wide', 'value': '1'});"
+      <a href="#!" onclick="call_button()"
         style="text-decoration:none;">
         <p class="call_button">中の人を呼ぶ</p>
       </a>
@@ -114,7 +117,8 @@
 
     <div class="exp_button_descrip">
       <p>
-        みんなが水滴のボタンを押すと，いくらか経った後に水滴の量が増えます．<br>みんなが中の人を呼ぶボタンを押すと中の人が実験室でしゃべり始めるかもしれないし，しゃべり始めないかもしれません．<br>チャットや匿名コメント欄には気づいたことや中の人へのメッセージ実験をこう変えて欲しいなどなんでも書いてください，ゆるっと反応します．
+        この実験はみんなで作る実験です．<br>
+        みんなが水滴のボタンを押すと，いくらか経った後に水滴の量が増えます．<br>みんなが中の人を呼ぶボタンを押すと中の人が実験室でしゃべり始めるかもしれないし，しゃべり始めないかもしれません．<br>YouTubeのチャット欄や匿名コメント欄には気づいたことや中の人へのメッセージ実験をこう変えて欲しいなどなんでも書いてください，ゆるっと反応します．
       </p>
     </div>
   </div>
@@ -122,37 +126,13 @@
     <p>スマートフォンやタブレットの場合は横向き全画面表示にしてご覧ください．</p>
   </div>
   <div id="sp">
-    <div id="exp_sp">
-      <div id="buttons__exp_sp">
-        <a href="#!" onclick="gtag('event', 'blue', {'event_category': '920', 'event_label': 'sp', 'value': '1'});"
-          style="text-decoration:none;">
-          <p class="blue_button">青の水滴
-          </p>
-        </a>
-        <a href="#!" onclick="gtag('event', 'yello', {'event_category': '920', 'event_label': 'sp', 'value': '1'});"
-          style="text-decoration:none;">
-          <p class="yellow_button">黄色の水滴</p>
-        </a>
-        <a href="#!" onclick="gtag('event', 'call', {'event_category': '920', 'event_label': 'sp', 'value': '1'});"
-          style="text-decoration:none;">
-          <p class="call_button">中の人を呼ぶ</p>
-        </a>
-      </div>
-
-      <div class="exp_button_descrip">
-        <p>
-          みんなが水滴のボタンを押すといくらか経った後に水滴の量が増えます．<br>みんなが中の人を呼ぶボタンを押すと中の人が実験室でしゃべり始めるかもしれないし，しゃべり始めないかもしれません．<br>チャットや匿名コメント欄には気づいたことや中の人へのメッセージ，実験をこう変えて欲しい，実験室にこんなものを置いて欲しいなどなんでも書いてください，ゆるっと反応します．
-        </p>
-      </div>
-    </div>
-
     <div id="chat_sp">
       <div id="live_chat_sp">
-        <iframe frameborder="0"
-          src="https://www.youtube.com/live_chat?v=lJGHqasLjnc&embed_domain=double-trees.github.io"
+     　<!--   <iframe id="youtube_chat_2" frameborder="0"
+          src="https://www.youtube.com/live_chat?v=ZFJxkhOVMBQ&embed_domain=iiiexhibition.com"
           allowfullscreen></iframe>
 
-      </div>
+      -->
 
 
       <form action="#!" method="post" onsubmit="post_message1();return false;">
@@ -168,38 +148,65 @@
     </div>
   </div>
 
+    <div id="exp_sp">
+      <div id="buttons__exp_sp">
+        <a href="#!" onclick="blue_button()"
+          style="text-decoration:none;">
+          <p class="blue_button">青の水滴
+          </p>
+        </a>
+        <a href="#!" onclick="yellow_button()"
+          style="text-decoration:none;">
+          <p class="yellow_button">黄色の水滴</p>
+        </a>
+        <a href="#!" onclick="call_button()"
+          style="text-decoration:none;">
+          <p class="call_button">中の人を呼ぶ</p>
+        </a>
+      </div>
+
+      <div class="exp_button_descrip">
+        <p>
+          この実験はみんなで作る実験です．<br>
+          みんなが水滴のボタンを押すといくらか経った後に水滴の量が増えます．<br>みんなが中の人を呼ぶボタンを押すと中の人が実験室でしゃべり始めるかもしれないし，しゃべり始めないかもしれません．<br>YouTubeのチャット欄や匿名コメント欄には気づいたことや中の人へのメッセージ，実験をこう変えて欲しい，実験室にこんなものを置いて欲しいなどなんでも書いてください，ゆるっと反応します．
+        </p>
+      </div>
+    </div>
+
+   </div>
 
 
+  <script src="./value.js"></script>
   <div id="title_main">
     <hr>
     <p>B et A laboratorium</p> <!-- タイトル（日本語） -->
   </div>
 
-  <div id="buttons__container">
+  <div id="buttons__container_2">
     <div class="row">
-      <a href="https://iiiexhibition.com/log/2020/true/iiiex_adventure/#">
+      <a href="https://iiiexhibition.com/log/2020/true/iiiex_adventure/#laboratorium">
         <div class="return"><img src="./img/return.png">
           <p class="return_jp">他の作品をみる</p>
           <p class="return_en">Other works</p>
         </div>
       </a>
-      <!-- いいねボタンここから -->
-      <div id="iine_wrap">
-        <!-- ボタン本体ここから -->
-        <button type="submit" id="iine">
-          <div class="iine_wrap">
-            <a class="button_good heart"><img src="./img/icon_loveheart.png"></a>
-            <div class="circle"></div>
-            <span id="countnum"></span>
-          </div>
-        </button>
-        <!-- ボタン本体ここまで -->
-      </div>
-      <!-- いいねボタンここまで -->
+  
       <a class="twitter"
-        href="https://twitter.com/intent/tweet?url=https://extra2020.iiiexhibition.com/works/&hashtags=WH&via=iiiexhibition"
+      href="https://twitter.com/intent/tweet?url=B+et+A+laboratorium+%7C+東京大学制作展+2020+%E3%80%80https%3A%2F%2Fwww.iiiexhibition.com%2Fyuna_adventure%2F%23laboratorium&hashtags=弛む,東京大学制作展,βlabo&via=iiiexhibition"
         target="_blank" data-via="@iiiexhibition" data-hashtags="iiiEx" data-related="iiiexhibition"
         data-show-count="false"><img src="./img/twitterblack.png" alt=""></a>
+<!--
+<div class="share_twitter">
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="B et A laboratorium | 東京大学制作展 2020" data-url="https://www.iiiexhibition.com/yuna_adventure/#laboratorium" data-via="iiexhibition" data-hashtags="弛む,東京大学制作展,βlabo" data-related="" data-lang="ja" data-dnt="true" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+        <div class="share_fa">
+
+        <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.iiiexhibition.com%2Fyuna_adventure%2F%23laboratorium&layout=button&size=large&width=0&height=0&appId" width="100" height="100" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+      </div>
+-->
+        
     </div>
   </div>
 
@@ -509,11 +516,11 @@
         </div>
         <!-- いいねボタンここまで -->
         <a class="twitter"
-          href="https://twitter.com/intent/tweet?url=https://extra2020.iiiexhibition.com/works/&hashtags=WH&via=iiiexhibition"
+        href="https://twitter.com/intent/tweet?url=B+et+A+laboratorium+%7C+東京大学制作展+2020+%E3%80%80https%3A%2F%2Fwww.iiiexhibition.com%2Fyuna_adventure%2F%23laboratorium&hashtags=弛む,東京大学制作展,βlabo&via=iiiexhibition"
           target="_blank" data-via="@iiiexhibition" data-hashtags="iiiEx" data-related="iiiexhibition"
           data-show-count="false"><img src="./img/twitterblack.png" alt=""></a>
       </div>
-      <a href="https://iiiexhibition.com/log/2020/true/iiiex_adventure/#">
+      <a href="https://iiiexhibition.com/log/2020/true/iiiex_adventure/#laboratorium">
         <div class="return"><img src="./img/return.png">
           <p class="return_jp">他の作品をみる</p>
           <p class="return_en">Other works</p>
