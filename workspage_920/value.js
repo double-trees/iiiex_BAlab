@@ -1,5 +1,5 @@
 
-var movie_ID="MEWBjV5mm1w" //ここを編集
+var movie_ID="LQpSbfLlFlw" //ここを編集
 
 var movie_pre="https://www.youtube.com/embed/"
 var movie_rear="?rel=0&autoplay=1&vq=highres"
@@ -19,4 +19,5 @@ var app_pre="https://youtu.be/"
     chat_1.src= chat_pre+movie_ID+chat_rear;
     chat_2.src= chat_pre+movie_ID+chat_rear;
     app.href=app_pre+movie_ID;
+
 
