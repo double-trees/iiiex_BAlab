@@ -12,8 +12,6 @@ function call_button(){
 
 
 
-
-
 function push_button(content){
     gtag('event', content, {'event_category': '920', 'event_label': 'sp', 'value': '1'});
 

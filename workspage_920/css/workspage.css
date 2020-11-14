@@ -662,7 +662,7 @@ margin: 10px 0px;
      margin: 0;
  
 /*    text-align: center;*/
- width: 300px;
+ width: 400px;
    
 
    position: relative;
@@ -985,4 +985,7 @@ margin: 0;
     line-height: 20px;
     margin: 0;
 }
-
+#app a:link { color:#000000; text-decoration:none }
+#app a:visited { color:#000000; text-decoration:none }
+#app a:hover { color:#000000; text-decoration:none }
+#app a:active { color:#000000; text-decoration:none }
