@@ -1,5 +1,6 @@
 
-var movie_ID="LQpSbfLlFlw" //ここを編集
+var movie_ID="4EoitS5SI2E" //ここを編集
+
 
 var movie_pre="https://www.youtube.com/embed/"
 var movie_rear="?rel=0&autoplay=1&vq=highres"
